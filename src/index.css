@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('https://higherlogicdownload.s3.amazonaws.com/ASCACONNECT/5961839c-b30e-4782-87e3-b0ebf590ce35/UploadedImages/Coding_Seminar/2022_Coding_Seminar/2022_Coding_Seminar_Site_Hero_Unit_2663x846_no_text_no_overlay_-_left_aligned-01.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  color: white;
+}
