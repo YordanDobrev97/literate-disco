@@ -17,7 +17,7 @@ export const Login = () => {
     const [email, setEmail] = useState<string>('')
     const [password, setPassword] = useState<string>('')
     const context = useContext(AuthContext)
-    const [_, setCookie] = useCookies(['jwt'])
+    const [cookie, setCookie] = useCookies(['jwt'])
 
     const navigation = useNavigate()
 
