@@ -6,7 +6,7 @@ import { Box } from '@mui/material'
 
 import { Navbar } from './components/navbar/Navbar'
 import { Home } from './pages/home/Home'
-import { Login } from './pages/auth/Login'
+import Login from './pages/auth/Login'
 import { Register } from './pages/auth/Register'
 import { ProjectList } from './pages/projects/ProjectList'
 
