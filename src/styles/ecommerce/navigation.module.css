@@ -1,0 +1,44 @@
+body {
+    background: none !important;
+}
+
+.navigation, .nav-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 12px;
+    align-items: baseline;
+}
+
+.navigation {
+    background: inherit;
+    border-bottom: 1px solid #030303;
+    width: 80%;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.nav-item {
+    list-style-type: none;
+    margin: 0 25px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    margin: 0 35px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-btn, .close-btn {
+    display: none;
+    border: none;
+    font-size: 20px;
+}
