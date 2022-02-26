@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+
 import styles from '../../styles/ecommerce/navigation.module.css'
 
 const Navbar = () => {
@@ -31,7 +34,7 @@ const Navbar = () => {
             </ul>
 
             <div className="right">
-                <i className="fas fa-shopping-cart"></i>
+                <FontAwesomeIcon icon={faShoppingCart}/>
                 <img className={styles['profile-img']} src="/avatar.png" />
             </div>
         </nav>
