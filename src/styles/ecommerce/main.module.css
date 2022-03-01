@@ -75,6 +75,16 @@
     cursor: pointer;
 }
 
+.remove-cart-btn {
+    margin-left: 20px;
+    border: none;
+    background-color: rgb(243, 15, 15);
+    color: white;
+    padding: 12px;
+    width: 190px;
+    cursor: pointer;
+}
+
 .main-img {
     width: 372px;
     height: 310px;
