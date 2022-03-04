@@ -29,6 +29,12 @@ export const ProjectList = () => {
       name: 'E-commerce',
       image: '/ecommerce.png',
       link: 'ecommerce',
+    },
+    {
+      id: 2,
+      name: 'Tips Calculator',
+      image: '/calculator.png',
+      link: 'calculator'
     }
   ])
   return (
@@ -42,7 +48,7 @@ export const ProjectList = () => {
               <CardMedia
                 component="img"
                 height="240"
-                image='/ecommerce.png'
+                image={project.image}
                 alt="green iguana"
               />
               <CardContent>
@@ -50,7 +56,7 @@ export const ProjectList = () => {
                   {project.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Landing page for e-commerce, made according to a specific figma design
+                  Landing page made according to a specific figma design
                 </Typography>
               </CardContent>
             </CardActionArea>
