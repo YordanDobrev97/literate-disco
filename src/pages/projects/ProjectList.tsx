@@ -35,6 +35,12 @@ export const ProjectList = () => {
       name: 'Tips Calculator',
       image: '/calculator.png',
       link: 'calculator'
+    },
+    {
+      id: 3,
+      name: 'Github user search',
+      image: '/github.png',
+      link: 'github'
     }
   ])
   return (

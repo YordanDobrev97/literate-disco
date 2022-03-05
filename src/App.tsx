@@ -12,7 +12,11 @@ import { Home } from './pages/home/Home'
 import Login from './pages/auth/Login'
 import { Register } from './pages/auth/Register'
 import { ProjectList } from './pages/projects/ProjectList'
-import { ECommerce, CalculatorPage } from './pages/projects/index'
+import { 
+  ECommerce,
+  CalculatorPage,
+  GitHubPage
+} from './pages/projects/index'
 import AuthContext from './context/authContext'
 
 function App() {
@@ -29,6 +33,7 @@ function App() {
             <Route path="projects" element={<ProjectList />} />
             <Route path="projects/ecommerce" element={<ECommerce />} />
             <Route path="projects/calculator" element={<CalculatorPage />}/>
+            <Route path="projects/github" element={<GitHubPage />}/>
           </Routes>
         </Box>
       </AuthContext.Provider>
