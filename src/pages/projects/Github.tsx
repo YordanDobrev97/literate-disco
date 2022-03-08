@@ -10,6 +10,7 @@ import FollowersInfo from '../../components/github/FollowersInfo'
 import FollowingInfo from '../../components/github/FollowingInfo'
 
 import GithubContext from '../../context/githubSearchContext'
+import ThemeContext from '../../context/themeContext'
 
 const GithubPage = () => {
   const [user, setUser] = useState({
@@ -19,12 +20,18 @@ const GithubPage = () => {
     following: 0,
     followers: 0
   })
+  const [currentTheme, setTheme] = useState('light')
+
+  const theme: string = currentTheme === 'light' ? '#FEFEFE' : '#141D2F'
+
   return (
-    <div className={styles['github-container']}>
+    <ThemeContext.Provider value={{currentTheme, setTheme}}>
+      <div className={styles['github-container']}
+      style={{backgroundColor: theme}}>
       <GithubContext.Provider value={{user, setUser}}>
         <Header />
 
-        <main>
+        <main style={{backgroundColor: theme}}>
           <UserInfo>
             <>
               <Description />
@@ -41,6 +48,7 @@ const GithubPage = () => {
         </main>
       </GithubContext.Provider>
     </div>
+    </ThemeContext.Provider>
   )
 }
 
