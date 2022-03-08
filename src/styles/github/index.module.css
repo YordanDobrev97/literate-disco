@@ -67,16 +67,12 @@ main {
 }
 
 .github-icon {
-  width: 30%;
-  height: 25%;
+  width: 25%;
+  height: 20%;
 }
 
 .github-profile-username {
   color: black;
-}
-
-.github-profile-user {
-  color: #7FBBFE;
 }
 
 .github-profile-description {
