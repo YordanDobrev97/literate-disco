@@ -137,13 +137,18 @@
   cursor: pointer;
 }
 
-footer {
+.equalizer-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 80px 0;
 }
 
 footer p {   
    max-width: 20em;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+  margin: 0 8px;
 }
 
 .fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover {
