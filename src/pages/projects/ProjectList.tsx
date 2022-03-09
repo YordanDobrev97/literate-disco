@@ -47,13 +47,19 @@ export const ProjectList = () => {
       name: 'Loop Studios',
       image: '/loop-studios.png',
       link: 'loopStudios'
+    },
+    {
+      id: 5,
+      name: 'equalizer',
+      image: '/equalizer-landing-page.png',
+      link: 'equalizer'
     }
   ])
   return (
     <>
     <Navbar />
       <Grid
-      m={6}
+      m={3}
       style={{ display: 'flex', justifyContent: 'center'}} xs={12}>
       {projects && projects.map((project) => {
         return (

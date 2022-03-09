@@ -16,7 +16,8 @@ import {
   ECommerce,
   CalculatorPage,
   GitHubPage,
-  LoopStudiosPage
+  LoopStudiosPage,
+  EqualizerPage
 } from './pages/projects/index'
 import AuthContext from './context/authContext'
 
@@ -36,6 +37,7 @@ function App() {
             <Route path="projects/calculator" element={<CalculatorPage />}/>
             <Route path="projects/github" element={<GitHubPage />}/>
             <Route path="projects/loopStudios" element={<LoopStudiosPage />}/>
+            <Route path="projects/equalizer" element={<EqualizerPage />}/>
           </Routes>
         </Box>
       </AuthContext.Provider>
