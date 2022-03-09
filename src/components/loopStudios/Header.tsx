@@ -1,20 +1,12 @@
 import styles from '../../styles/loopStudios/index.module.css'
+import Nav from './Nav'
 
 const Header = () => {
   return (
     <header className={styles['header-loop-studio']}>
       <section className={styles['loop-studio-section']}>
         <a>loopstudios</a>
-
-        <nav>
-          <ul className={styles['loop-studio-nav']}>
-            <li>About</li>
-            <li>Careers</li>
-            <li>Events</li>
-            <li>Products</li>
-            <li>Support</li>
-          </ul>
-        </nav>
+        <Nav />
       </section>
 
       <section className={styles['loop-studio-bottom-section']}>

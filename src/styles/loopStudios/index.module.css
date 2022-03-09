@@ -138,3 +138,32 @@ body {
   font-size: 22px;
   text-transform: uppercase;
 }
+
+.footer {
+  background-color: black;
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-nav h1, .icon {
+  color: white;
+}
+
+.icon {
+  margin: 0 12px;
+  font-size: 20px;
+}
+
+.copyright {
+  color: gainsboro;
+}
