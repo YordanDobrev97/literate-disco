@@ -47,3 +47,40 @@ body {
   text-transform: uppercase;
   text-align: left;
 }
+
+.about-section {
+  width: 80%;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.iteractive-img {
+  width: 40%;
+  height: 35%;
+}
+
+.about-container {
+  width: 65%;
+  min-height: 25%;
+  margin: 8px;
+  border: 1px solid whitesmoke;
+  padding: 10px 20px;
+  position: relative;
+  top: 80px;
+  right: 120px;
+  background-color: white;
+  text-align: center;
+}
+
+.about-title {
+  color: black;
+  text-transform: uppercase;
+  max-width: 45%;
+  text-align: center;
+}
+
+.about-description {
+  max-width: 28em;
+  color: rgb(119, 119, 119);
+}
