@@ -15,7 +15,8 @@ import { ProjectList } from './pages/projects/ProjectList'
 import { 
   ECommerce,
   CalculatorPage,
-  GitHubPage
+  GitHubPage,
+  LoopStudiosPage
 } from './pages/projects/index'
 import AuthContext from './context/authContext'
 
@@ -34,6 +35,7 @@ function App() {
             <Route path="projects/ecommerce" element={<ECommerce />} />
             <Route path="projects/calculator" element={<CalculatorPage />}/>
             <Route path="projects/github" element={<GitHubPage />}/>
+            <Route path="projects/loopStudios" element={<LoopStudiosPage />}/>
           </Routes>
         </Box>
       </AuthContext.Provider>

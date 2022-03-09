@@ -41,12 +41,20 @@ export const ProjectList = () => {
       name: 'Github user search',
       image: '/github.png',
       link: 'github'
+    },
+    {
+      id: 4,
+      name: 'Loop Studios',
+      image: '/loop-studios.png',
+      link: 'loopStudios'
     }
   ])
   return (
     <>
     <Navbar />
-      <Grid m={6} style={{ display: 'flex', justifyContent: 'center' }} xs={12}>
+      <Grid
+      m={6}
+      style={{ display: 'flex', justifyContent: 'center'}} xs={12}>
       {projects && projects.map((project) => {
         return (
           <Card key={project.id} style={{ margin: '10px', width: '30%' }}>

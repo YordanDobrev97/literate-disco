@@ -31,7 +31,7 @@ const SearchContainer = () => {
         <input
           className={styles['github-input']}
           type='text'
-          placeholder='Search githu username...' 
+          placeholder='Search github username...' 
           onChange={(e) => setUsername(e.target.value)}
           />
         <button onClick={onSearchHandler} className={styles['github-search-btn']}>Search</button>
