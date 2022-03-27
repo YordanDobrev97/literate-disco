@@ -1,0 +1,74 @@
+*, html {
+  margin: 0;
+  padding: 0;
+}
+
+.main-calculator-container {
+  width: 60%;
+  padding: 8%;
+  margin: 10% auto;
+  background-color: #C5E4E7;
+}
+
+.main-calculator-container div {
+  margin: 20px;
+}
+
+.input {
+  border: 1px solid black;
+  padding: 20px 30px;
+  width: '100%';
+  border-radius: 3px;
+  background-color: #F3F9FA;
+}
+
+.percent-container {
+  width: 55%;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.percent-container p{
+  background-color: #00474B;
+  padding: 10px;
+  margin: 4px;
+  width: 40px;
+  height: 10%;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #26C2AE !important;
+  color: #00474B !important;
+}
+
+.custom {
+  background-color: #F3F9FA !important;
+  color: rgb(68, 68, 68);
+}
+
+.right-container {
+  height: 70%;
+  width: 40%;
+  background-color: #00474B;
+  color: white;
+}
+
+.reset-btn {
+  background-color: #26C2AE;
+  color: #00474B;
+  border: none;
+  padding: 10px 50px;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+}
+
+.price {
+  color: #26C2AE;
+  font-size: 22px;
+}

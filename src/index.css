@@ -5,10 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url('https://higherlogicdownload.s3.amazonaws.com/ASCACONNECT/5961839c-b30e-4782-87e3-b0ebf590ce35/UploadedImages/Coding_Seminar/2022_Coding_Seminar/2022_Coding_Seminar_Site_Hero_Unit_2663x846_no_text_no_overlay_-_left_aligned-01.png');
+  background: url('https://wallpaperaccess.com/full/1691700.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100%;
 }
 
 code {

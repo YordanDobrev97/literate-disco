@@ -13,7 +13,7 @@ import styles from '../../styles/auth.module.css'
 import UserService from '../../services/user'
 import AuthContext from '../../context/authContext'
 
-export const Login = () => {
+const Login = () => {
     const [email, setEmail] = useState<string>('')
     const [password, setPassword] = useState<string>('')
     const context = useContext(AuthContext)
@@ -26,7 +26,7 @@ export const Login = () => {
         if (res) {
             setCookie('jwt', res.accessToken)
             context.setAuthenticated(true)
-            navigation('/')
+            navigation('/projects')
         }
     }
 
@@ -71,3 +71,5 @@ export const Login = () => {
         </Grid>
     )
 }
+
+export default Login

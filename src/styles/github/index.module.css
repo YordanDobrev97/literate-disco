@@ -1,0 +1,97 @@
+
+.github-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.github-container {
+  background-color: #F6F8FF;
+  width: 100%;
+  margin: auto;
+}
+
+.github-header-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.github-search-section {
+  box-shadow: 5px 5px 10px 5px #000000;
+  border-radius: 12px;
+  margin: 40px;
+}
+
+.github-search-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.github-input {
+  border: none;
+  background: inherit;
+  font-size: 24px;
+  padding: 8px;
+  border-radius: 14px;
+}
+
+.github-search-btn {
+  padding: 14px;
+  background: #0079FF;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+}
+
+.search-icon {
+  color: blue;
+  font-size: 26px;
+}
+
+main {
+  background-color: white;
+  width: 80%;
+  margin: 15px auto;
+  padding: 40px 20px;
+  border-radius: 18px;
+  box-shadow: 5px 3px 20px 0px rgba(0,0,0,0.92);
+}
+
+.github-top {
+  display: flex;
+  font-size: 24px;
+}
+
+.github-icon {
+  width: 25%;
+  height: 20%;
+}
+
+.github-profile-username {
+  color: black;
+}
+
+.github-profile-description {
+  max-width: 62%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.github-user-info {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: 15px auto;
+  background-color: #F6F8FF;
+  padding: 12px;
+  font-size: 20px;
+}
+
+.github-media-container {
+  width: 40%;
+  margin: 15px auto;
+}

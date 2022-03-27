@@ -1,0 +1,157 @@
+* {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.site-container {
+  width: 80%;
+  height: 100vh;
+  min-height: 28em;
+  margin: auto;
+}
+
+/* header-section */
+
+.header-title {
+  padding: 20px 100px;
+}
+
+.background-img {
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.rectangle-container {
+  position: absolute;
+  right: 0;
+  top: -3em;
+}
+
+.heading {
+  padding: 20px 95px;
+  font-size: 42px;
+  max-width: 15em;
+  color: rgb(37, 37, 37);
+}
+
+.description {
+  padding: 20px 90px;
+  font-size: 17px;
+  max-width: 69%;
+  margin-top: -30px;
+}
+
+/* main section */
+
+.main-section {
+  margin: 150px 90px;
+  height: 70%;
+  width: 80%;
+  background-color: #0d0d4e;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.main-image-container {
+  display: flex;
+}
+
+.main-image-container img {
+  width: 30%;
+  height: 27em;
+}
+
+.phone {
+  position: relative;
+  bottom: 8em;
+  left: 80px;
+  z-index: 1;
+}
+
+.premium-container {
+  width: 18em;
+  background-color: #FA7453;
+  color: white;
+  font-size: 17px;
+  z-index: 2;
+  padding: 2.5em;
+  margin-top: 65px;
+  margin-left: 15em;
+}
+
+.premium-container h4 {
+  font-size: 20px;
+}
+
+.premium-container p {
+  min-width: 15em;
+  margin: 15px 0;
+}
+
+.outside {
+  position: absolute;
+  left: 26em;
+  width: 34em;
+  height: 20em;
+  z-index: 0;
+}
+
+.price {
+  font-size: 32px;
+}
+
+.fa-apple {
+  color: white;
+}
+
+.ios-container {
+  margin: auto;
+}
+
+.ios-btn {
+  width: 100%;
+  background-color: #66E2DC;
+  border: none;
+  font-size: 18px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.ios-btn:hover {
+  cursor: pointer;
+}
+
+.android-btn {
+  width: 100%;
+  background-color: #FFB964;
+  border: none;
+  font-size: 18px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.android-btn:hover {
+  cursor: pointer;
+}
+
+.equalizer-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+footer p {   
+   max-width: 20em;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+  margin: 0 8px;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover {
+  cursor: pointer;
+  color: orange;
+}
