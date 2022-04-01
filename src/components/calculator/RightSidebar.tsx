@@ -8,7 +8,6 @@ interface RightSidebarProps {
 
 const RightSidebar = ({tipTotal, total, reset}: RightSidebarProps) => {
   const onResetHandler = () => {
-    console.log('click')
     reset()
   }
   

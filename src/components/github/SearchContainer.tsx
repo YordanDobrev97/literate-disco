@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import GithubSearchContext from '../../context/githubSearchContext'
 
-import { GithubAPI } from '../../utils/api'
 import SearchService from '../../services/searchGithubApi'
 
 const SearchContainer = () => {
@@ -13,7 +12,7 @@ const SearchContainer = () => {
 
   const onSearchHandler = async () => {
     const data = await SearchService(username)
-    console.log(data)
+
     context.setUser({
       name: data.login,
       image: data.avatar_url,

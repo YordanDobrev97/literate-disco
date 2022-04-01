@@ -16,7 +16,6 @@ const CalculatorPage = () => {
   useEffect(() => {
     if (price && rate && peopleCount) {
       const tipTotalRes = price * (rate / 100) / peopleCount
-      console.log(tipTotalRes)
       setTipTotal(tipTotalRes)
       setTotal((price / peopleCount) + tipTotalRes)
     }

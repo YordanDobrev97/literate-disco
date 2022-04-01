@@ -13,7 +13,6 @@ const PercentContainer = ({ setRate }: PercentContainerProps) => {
   const [selected, setSelected] = useState<number>()
 
   const selectRate = (key: number) => {
-    console.log(key)
     setSelected(key)
   }
 
