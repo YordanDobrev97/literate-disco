@@ -27,7 +27,7 @@ function App() {
   return (
     <BrowserRouter>
       <AuthContext.Provider value={{ isAuthenticated, setAuthenticated }}>
-        <Box sx={{ flexGrow: 1 }}>
+        <Box style={{minHeight: '100%'}}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/auth/signIn" element={<Login />} />

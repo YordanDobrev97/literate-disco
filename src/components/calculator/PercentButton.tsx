@@ -21,7 +21,7 @@ const PercentButton = ({
   }
 
   return (
-    <p onClick={_onClick} className={className}>
+    <p onClick={_onClick} className={context.rate ? className: ''}>
       {rate}%
     </p>
   )

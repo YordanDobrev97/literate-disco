@@ -13,11 +13,11 @@ const RightSidebar = ({tipTotal, total, reset}: RightSidebarProps) => {
   
   return (
     <div className={styles['right-container']}>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <div className={styles['total']}>
         <h4>Tip Total</h4>
         <span className={styles.price}>${tipTotal.toFixed(2)}</span>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <div className={styles['total']}>
         <h4>Total</h4>
         <span className={styles.price}>${total.toFixed(2)}</span>
       </div>

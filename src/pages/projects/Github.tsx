@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import styles from '../../styles/github/index.module.css'
 import Header from '../../components/github/Header'
+import BackButton from '../../components/common/BackButton'
 import UserInfo from '../../components/github/UserInfo'
 import GithubContext from '../../context/githubSearchContext'
 import ThemeContext from '../../context/themeContext'
@@ -30,9 +31,7 @@ const GithubPage = () => {
       <div className={styles['github-container']}
       style={{backgroundColor: theme}}>
       <GithubContext.Provider value={{user, setUser}}>
-        <Link to='/projects'>
-          <button className={styles['back-btn']}>Back</button>
-        </Link>
+        <BackButton />
         <Header />
 
         <main style={{backgroundColor: theme }}>
