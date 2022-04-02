@@ -119,6 +119,11 @@ main {
   margin: 15px auto;
 }
 
+.media-item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .github-date {
   color: #697C9A;
 }

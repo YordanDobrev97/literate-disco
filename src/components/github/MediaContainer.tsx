@@ -7,16 +7,16 @@ import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 import styles from '../../styles/github/index.module.css'
 import ThemeContext from '../../context/themeContext'
 import GithubContext from '../../context/githubSearchContext'
-import { LIGHT } from '../../constants/GithubConstants'
+import { LIGHT, BLACK, WHITE } from '../../constants/GithubConstants'
 
 const MediaContainer = () => {
   const themeContext = useContext(ThemeContext)
   const githubContext = useContext(GithubContext)
 
-  const currentColor = themeContext.currentTheme === LIGHT ? 'black': 'white'
+  const currentColor = themeContext.currentTheme === LIGHT ? BLACK: WHITE
   return (
     <div className={styles['github-media-container']}>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <div className={styles['media-item']}>
         <div style={{color: currentColor}}>
           <FontAwesomeIcon icon={faLocationDot} color={currentColor} />
           {githubContext.user.location}
@@ -26,7 +26,7 @@ const MediaContainer = () => {
           {githubContext.user.twitter_username || 'Not Avaliable'}
         </div>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <div className={styles['media-item']}>
         <div style={{color: currentColor}}>
           <FontAwesomeIcon icon={faLink} color={currentColor}/>
           {githubContext.user.blog}
