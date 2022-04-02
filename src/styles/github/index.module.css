@@ -9,6 +9,7 @@
 .github-container {
   background-color: #F6F8FF;
   width: 100%;
+  max-height: 100%;
   margin: auto;
 }
 
@@ -36,6 +37,15 @@
   font-size: 24px;
   padding: 8px;
   border-radius: 14px;
+  color: 'blue';
+}
+
+.light::placeholder {
+  color: black;
+}
+
+.dark::placeholder {
+  color: white;
 }
 
 .github-search-btn {
@@ -64,16 +74,25 @@ main {
 .github-top {
   display: flex;
   font-size: 24px;
+  justify-content: space-between;
 }
 
 .github-icon {
   width: 25%;
   height: 20%;
+  border-radius: 50%;
+  background: white;
 }
 
-.github-profile-username {
-  color: black;
+.github-profile-dark {
+  color: white;
+  max-width: 25em;
 }
+
+.github-profile-light {
+  color: black;
+  max-width: 25em;
+} 
 
 .github-profile-description {
   max-width: 62%;
@@ -91,7 +110,40 @@ main {
   font-size: 20px;
 }
 
+.github-username {
+  color: #9FCCFE;
+}
+
 .github-media-container {
   width: 40%;
   margin: 15px auto;
+}
+
+.github-date {
+  color: #697C9A;
+}
+
+.github-theme-container {
+  display: flex;
+  font-size: 20px;
+}
+
+.github-current-theme {
+  text-transform: uppercase;
+}
+
+.github-theme-btn {
+  border: none;
+  background: none;
+}
+
+.back-btn {
+  width: 100%;
+  margin: auto;
+  background: #697C9A;
+  color: white;
+  padding: 8px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }

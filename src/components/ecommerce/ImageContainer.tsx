@@ -1,25 +1,17 @@
-import { useState } from 'react'
 import styles from '../../styles/ecommerce/main.module.css'
+import { PRODUCT_THUMBNAIL } from '../../constants/EcommerceConstants'
 
 const ImageContainer = () => {
-  const [images, setImages] = useState([
-    '/image-product-1-thumbnail.jpg',
-    '/image-product-2-thumbnail.jpg',
-    '/image-product-3-thumbnail.jpg',
-    '/image-product-4-thumbnail.jpg',
-  ])
-
   return (
     <section className={styles['left-wrapper']}>
       <div className={styles['main-top-image']}>
-        <img className={styles['main-img']} src="/image-product-1-thumbnail.jpg" />
+        <img className={styles['main-img']} src={PRODUCT_THUMBNAIL.replace('{0}', '1')} />
       </div>
       <div className={styles['bottom-images']}>
-        {images && images.map((image) => {
-          return (
-            <img className={styles['small-img']} src={image} />
-          )
-        })}
+        <img className={styles['small-img']} src={PRODUCT_THUMBNAIL.replace('{0}', '1')} alt='product-thumnail'/>
+        <img className={styles['small-img']} src={PRODUCT_THUMBNAIL.replace('{0}', '2')} alt='product-thumnail'/>
+        <img className={styles['small-img']} src={PRODUCT_THUMBNAIL.replace('{0}', '3')} alt='product-thumnail'/>
+        <img className={styles['small-img']} src={PRODUCT_THUMBNAIL.replace('{0}', '4')} alt='product-thumnail'/>
       </div>
     </section>
   )
