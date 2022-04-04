@@ -2,7 +2,8 @@ body {
     background: none !important;
 }
 
-.navigation, .nav-items {
+.navigation,
+.nav-items {
     display: flex;
     justify-content: space-around;
     margin: 12px;
@@ -11,7 +12,7 @@ body {
 
 .navigation {
     background: inherit;
-    border-bottom: 1px solid #030303;
+    border-bottom: 1px solid var(--black);
     width: 80%;
     margin: 20px auto;
     cursor: pointer;
@@ -20,10 +21,30 @@ body {
 .nav-item {
     list-style-type: none;
     margin: 0 25px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF7E1B;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .nav-link {
-    color: black;
+    color: var(--black);
 }
 
 .profile-img {
@@ -37,7 +58,8 @@ body {
     align-items: center;
 }
 
-.hamburger-btn, .close-btn {
+.hamburger-btn,
+.close-btn {
     display: none;
     border: none;
     font-size: 20px;
@@ -68,8 +90,8 @@ body {
     right: 10%;
     width: 20%;
     height: 35%;
-    background-color: rgb(248, 247, 246);
-    box-shadow: 5px 5px 15px 5px #000000;
+    background-color: var(--white);
+    box-shadow: 5px 5px 15px 5px var(--black);
     border-radius: 14px;
 }
 
@@ -78,7 +100,7 @@ body {
 }
 
 .cart-checkout h4 {
-    color: rgb(141, 141, 141);
+    color: var(--grey);
     font-size: 13px;
     max-width: 100%;
 }
@@ -92,8 +114,8 @@ body {
 .checkout-btn {
     text-align: center;
     padding: 12px;
-    background-color: orange;
-    color: #ffff;
+    background-color: var(--orange);
+    color: var(--white);
     border: none;
     border-radius: 14px;
     min-width: 90%;

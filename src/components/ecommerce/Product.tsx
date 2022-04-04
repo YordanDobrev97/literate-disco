@@ -1,4 +1,6 @@
 import { useState, useContext } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { ToastContainer, toast, cssTransition } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -39,7 +41,7 @@ const Product = () => {
       context.setBasket(true)
     } else {
       toast.error('You cannot add the product when the quantity is 0')
-    } 
+    }
   }
 
   const removeFromCart = () => {
@@ -52,22 +54,25 @@ const Product = () => {
       <Pricing />
 
       <article className={styles['cart-wrapper']}>
-        <button onClick={decreaseHandler} className={styles['decrease-btn']}>-</button>
-        <p className={styles['product-count']}>{productCount}</p>
-        <button onClick={increaseHandler} className={styles['increase-btn']}>+</button>
+        <div className={styles['btn-container']}>
+          <button onClick={decreaseHandler} className={styles['decrease-btn']}>-</button>
+          <p className={styles['product-count']}>{productCount}</p>
+          <button onClick={increaseHandler} className={styles['increase-btn']}>+</button>
+        </div>
+
 
         {context.isAddToBasket ? (
           <button onClick={removeFromCart} className={styles['remove-cart-btn']}>
-            <i className="fas fa-shopping-cart"></i>
+            <FontAwesomeIcon icon={faShoppingCart} color='white'/>
             Remove from cart
           </button>
         ) : (
           <button onClick={addToCartHandler} className={styles['add-cart-btn']}>
-            <i className="fas fa-shopping-cart"></i>
+            <FontAwesomeIcon icon={faShoppingCart} color='white'/>
             Add to cart
           </button>
         )}
-        <ToastContainer transition={bounce} autoClose={3000} closeOnClick/>
+        <ToastContainer transition={bounce} autoClose={3000} closeOnClick />
       </article>
     </>
   )
